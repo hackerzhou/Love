@@ -75,6 +75,11 @@
 		together.setSeconds(0);
 		together.setMilliseconds(0);
 		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
